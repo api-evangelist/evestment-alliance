@@ -1,8 +1,27 @@
 aid: evestment-alliance
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/evestment-alliance.png
 name: eVestment Alliance
-description: eVestment Alliance is a company surfaced as a portfolio company of insight-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: 'eVestment Alliance is an institutional investment data, analytics, and
+  market-intelligence platform founded in 2000 and headquartered in Atlanta, Georgia.
+  Institutional asset managers report performance, holdings, and firm data into the
+  platform, while investment consultants, asset owners, and allocators use it to research,
+  screen, and compare managers, funds, and strategies across traditional and alternative
+  asset classes. eVestment was acquired by Nasdaq in 2017 and is now delivered as part
+  of Nasdaq''s investment-intelligence solutions; its primary website redirects to
+  nasdaq.com/solutions/evestment/. Originally backed by Insight Partners, it is tracked
+  in the API Evangelist network as a portfolio company. No public developer portal,
+  API documentation, or machine-readable API surface is currently published.'
 url: https://raw.githubusercontent.com/api-evangelist/evestment-alliance/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Investment Analytics
+- Institutional Investing
+- Financial Data
+- Asset Management
+- Market Intelligence
+- Nasdaq
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/evestment-alliance-domain-security.yml
 - type: Website
   url: http://www.evestment.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
